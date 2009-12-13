@@ -8,15 +8,15 @@ This application doesn't have a lot of immediate usefulness that services like B
 
 ## Dependencies
 
-* MongoDB
-* Mongo.rb
-* Sinatra
-* Mustache
-* Shotgun
+* Install [MongoDB](http://www.mongodb.org/display/DOCS/Downloads)
+* Install the bundler
+`gem install bundler`
+* Bundle the workspace
+`gem bundle`
 
 ## Starting the app
 
-`rake start` and then browse to <http://localhost:9393>
+`bin/rake start` and then browse to <http://localhost:9393>
 
 ## TODO
 
