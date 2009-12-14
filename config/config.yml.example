@@ -8,7 +8,9 @@
 # Note:
 # * The appropriate data_objects adapter must be installed (`do_mysql`, etc)
 # * You must create the `watchtower` database on localhost, of course.
-:database_uri: mysql://root@localhost/watchtower_dev
+# :database_uri: mysql://root@localhost/watchtower_dev
 
 # Path to the watchtower log file
 :log: /var/log/watchtower.log
+
+:search_term: github

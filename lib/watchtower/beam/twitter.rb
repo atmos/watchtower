@@ -2,7 +2,8 @@ module Watchtower
   module Beam
     class Twitter
       def initialize
-        @tweets_document = Nokogiri::HTML(open('http://search.twitter.com/search.atom?q=github'))
+        term = Watchtower.config[:search_term]
+        @tweets_document = Nokogiri::HTML(open("http://search.twitter.com/search.atom?q=#{term}"))
 
         @results = self.find_github_tweets
       end

@@ -32,6 +32,7 @@ module Watchtower
     @defaults ||= { :database_uri      => "sqlite3::memory:",
                     :log               => STDOUT,
                     :base_uri          => "http://localhost:8910",
+                    :search_term       => 'github',
                     :log_debug_info    => false }
   end
 

@@ -3,3 +3,4 @@ tmp
 db/*
 bin
 vendor
+config/config.yml

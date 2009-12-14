@@ -8,10 +8,12 @@ module Watchtower
       end
 
       def find_github_stories
+        term = Watchtower.config[:search_term]
+
         stories = []
         @stories_document.css('tr').each do |row|
           link = row.css('td.title a').first
-          if link && (link['href'].downcase =~ (/github/) || link.content.downcase =~ (/github/))
+          if link && (link['href'].downcase =~ (/#{term}/) || link.content.downcase =~ (/#{term}/))
             author, author_url, comments, hn_url, points = "?"
 
             meta_row = row.next
